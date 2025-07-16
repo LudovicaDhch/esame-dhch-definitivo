@@ -1,0 +1,634 @@
+html {
+	height: 400%;
+	max-width:100%;
+}
+
+body {
+	font-family: Arial;
+	font-size:18px;
+	height:100%;
+	max-width:auto;
+	margin:0;
+}
+
+/* header */
+header {
+	background-color: rgba(255,255,255, 0.8);
+	margin:0;
+	padding:0.2%;
+	text-align:center;
+	color: black;
+	text-decoration:none;
+	font-size:30px;
+	text-shadow: 2px 2px #a64dff;
+} 
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: #26004d;
+  margin-bottom:0;
+}
+
+.breadcrumb {
+	width:auto;
+	margin:none;
+	margin-top:0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 3px;
+  color: white;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color:white;
+  text-decoration:none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.li a:active {
+	color:white;
+	text-decoration:underline;
+	padding-color:#26004d;
+	border:0px;
+	border-color:none;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color:black;
+	overflow: hidden;
+	padding:10px;
+	margin-top:0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	color: white;
+	float: left;
+	text-align: center;
+	position: center;
+	vertical-align:center;
+	padding: 10px 10px;
+	padding-color: black;
+	text-decoration: none;
+	font-size: 16px;
+  margin-right:1%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+  padding-color: #26004d;
+  color: white;
+  text-align: center;
+  position: center;
+  vertical-align:center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 10px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.filters a {
+  color:#a64dff;
+}
+
+.filters a:hover {
+  background-color:#a64dff;
+  color:white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav input[type=text] {
+    float: right;
+    padding: 15px;
+    border: 4px solid #a64dff;
+    font-size: 14px;
+    position:center;
+  }
+}
+
+body {
+	font-family: Arial;
+	width:auto;
+	font-size: 18px;
+	background-image: url(../img/original.png);
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.2);
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-attachment: fixed;
+	background-position: center;
+	margin:0;
+}
+
+section {
+	height:115%;
+	text-align:center;
+	margin-left:2%;
+	margin-right:2%;
+	background-color: rgba(0,0,0,0.8);
+	font-color:white;
+	padding:2%;
+	margin-top:4%;
+	margin-bottom:2%;
+}
+
+
+/* Catalogo con pulsanti in alto */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  margin-bottom:1%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: white;
+  float: center;
+  border: 4px groove black;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 18px;
+  margin-right:5%;
+  margin-left:5%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#a64dff;
+}
+
+/* Create an active/current tablink class */
+.tab button:active {
+  background-color:#a64dff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display:block;
+  padding: 6px 12px;
+  background-color: rgba(255,255,255,0.8);
+  font-size:18px;
+  height:93%;
+}
+
+
+/* filter iniziale */
+.filterDiv {
+  display: none; /* Hidden by default */
+  float:left;
+}
+
+.container {
+  padding:1.5%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show-zero {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #a64dff;
+}
+
+/* Add a dark background to the active button */
+.btn:active {
+  background-color: #a64dff;
+  color: white;
+}
+
+
+/* cards nel catalogo generale */
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10 {
+  height:700px;
+  width:230px;
+  text-align:left;
+  font-size:14px;
+  margin:1.7%;
+  background-color:white;
+  padding:10px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p, .card-5 p, .card-6 p, .card-7 p, .card-8 p, .card-9 p, .card-10 p {
+  font-size:12px;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .card-7:hover, .card-8:hover, .card-9:hover, .card-10:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+}
+
+/* Add some padding inside the card container */
+.container-1, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .container-8, .container-9, .container-10 {
+  padding: 2px 10px;
+  height:600px;
+}
+
+.container-1 h4, .container-2 h4, .container-3 h4, .container-4 h4, .container-5 h4, .container-6 h4, .container-7 h4, .container-8 h4, .container-8 h4, .container-9 h4, .container-10 h4 {
+	color:#a64dff;
+	text-align:center;
+	text-decoration:underline;
+	font-size:16px;
+}
+
+.container-1 a, .container-2 a, .container-3 a, .container-4 a, .container-5 a, .container-6 a, .container-7 a, .container-8 a, .container-9 a, .container-10 a {
+  color:#a64dff;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+  height:50%;
+}
+
+
+
+/* sezione romana */
+.column-one {
+	float:left;
+	font-size:16px;
+	background-color:white;
+	width:15%;
+	margin-left:2%;
+	height:10%;
+}
+
+.dropbtn, .dropbtn-2, .dropbtn-3 {
+	background-color: black;
+  color: white;
+	padding: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	border:2px groove black;
+	margin-top:10%;
+}
+
+.dropbtn:hover, .dropbtn-2:hover, .dropbtn-3:hover, .dropbtn:focus, .dropbtn-2:focus, .dropbtn-3:focus {
+	background-color: #a64dff;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown, .dropdown-2, .dropdown-3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn:active, .dropbtn-2:active, .dropbtn-3:active {
+  background-color:#a64dff;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 150px;
+  border: 2px groove black;
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 150px;
+  border: 2px groove black;
+  z-index: 1;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 150px;
+  border: 2px groove black;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a {
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 a {
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover, .dropdown-content2 a:hover, .dropdown-content3 a:hover {
+	background-color: #cccccc;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.show2 {display:block;}
+.show3 {display:block;}
+
+.column-two {
+	float:right;
+	font-size:18px;
+	margin-right:2%;
+	width:75%;
+	height:59%;
+}
+
+.column-two > div {
+  text-align: center;
+  border:1%;
+}
+
+
+/* sezione medievale */
+
+.column-one1 {
+	float:left;
+	font-size:16px;
+	background-color:white;
+	width:15%;
+	margin-left:2%;
+	height:10%;
+}
+
+.column-two2 {
+	float:right;
+  font-size:18px;
+	margin-right:2%;
+	width:75%;
+	height:59%;
+}
+
+.column-two2 > div {
+  text-align: center;
+  border:1%;
+}
+
+.dropbtn-one, .dropbtn-two, .dropbtn-three {
+	background-color: black;
+  color: white;
+	padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border:2px groove black;
+  margin-top:10%;
+}
+
+.dropbtn-one:hover, .dropbtn-two:hover, .dropbtn-three:hover, .dropbtn-one:focus, .dropbtn-two:focus, .dropbtn-three:focus {
+	background-color: #a64dff;
+}
+
+.dropbtn-one:active, .dropbtn-two:active, .dropbtn-three:active {
+  background-color: #a64dff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-one, .dropdown-two, .dropdown-three {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-one, .dropdown-content-two, .dropdown-content-three {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 2px groove black;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content-one a, .dropdown-content-two a, .dropdown-content-three a{
+	color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-one a:hover, .dropdown-content-two a:hover, .dropdown-content-three a:hover {
+	background-color: #cccccc;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show-one {display:block;}
+.show-two {display:block;}
+.show-three {display:block;}
+
+
+
+
+
+
+/* epoca moderna */
+.column-first {
+  float:left;
+  font-size:16px;
+  background-color:white;
+  width:15%;
+  margin-left:2%;
+  height:10%;
+}
+
+.column-second {
+  float:right;
+  margin-right:2%;
+  width:75%;
+  height:59%;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  column-gap:2%;
+  row-gap:2%;
+}
+
+.column-second > div {
+  text-align: center;
+  border:1%;
+}
+
+.dropbtn-first, .dropbtn-second, .dropbtn-third {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border:2px groove black;
+  height:10%;
+  margin-top:9px;
+}
+
+.dropbtn-first:hover, .dropbtn-second:hover, .dropbtn-third:hover, .dropbtn-first:focus, .dropbtn-second:focus, .dropbtn-third:focus {
+  background-color: #a64dff;
+}
+
+.dropbtn-first:active, .dropbtn-second:active, .dropbtn-third:active {
+  background-color: #a64dff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-first, .dropdown-second, .dropdown-third {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-first, .dropdown-content-second, .dropdown-content-third {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 2px groove black;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content-first a, .dropdown-content-second a, .dropdown-content-third a{
+  color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-first a:hover, .dropdown-content-second a:hover, .dropdown-content-third a:hover {
+  background-color: #cccccc;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show-first {display:block;}
+.show-second {display:block;}
+.show-third {display:block;}
+
+
+
+footer {
+	margin:0;
+}
+
+.footer {
+	font-size:14px;
+	color: white;
+	background-color:#26004d;
+	padding:20px;
+	text-align:center;
+	height:5%;
+}
+
+.footer a {
+	color:white;
+}
+
+.copyrights {
+	font-size: 14px;
+	background-color:black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.copyrights a {
+	color:white;
+}
+
+
+/* Bottom to Top button */
+button0 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 14px;
+  border: 1px solid white;
+  outline: none;
+  background-color: #26004d;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+button0:hover {
+  background-color: #a64dff;
+}

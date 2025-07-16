@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ita">
+  <!-- file html diviso in head e body -->
+  <head>
+    <title>Catalogo - Sulle tracce dell'auctoritas</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="keywords" content="Auctoritas, impero romano">
+    <META NAME="DC.Title" CONTENT="Sulle tracce dell'auctoritas">
+    <META NAME="DC.Creator" CONTENT="Ludovica Mei">
+    <META NAME="DC.Subject" CONTENT="Auctoritas, storia">
+    <META NAME="DC.Description" CONTENT="Analisi delle fonti di epoca romana repubblicana, medievale e moderna relative al concetto politico di auctoritas">
+    <META NAME="DC.Publisher" CONTENT="Ludovica Mei">
+    <META NAME="DC.Date" CONTENT="2025-07-15">
+    <META NAME="DC.Type" CONTENT="Document">
+    <META NAME="DC.Format" CONTENT="Text/html">
+    <META NAME="DC.Identifier" CONTENT="...">
+    <META NAME="DC.Language" CONTENT="Italiano">
+    <META NAME="DC.Rights" CONTENT="Copyright (c) 2025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile/style-catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <blockquote><em><strong>Sulle tracce dell'auctoritas</strong></em></blockquote>
+    </header>
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+    </ul>
+    <topnav>
+        <div class="topnav">
+            <a href="index.html" class="active" title="Vai alla Home">Home</a> 
+            <a href="#" class="active" title="Vai all'Introduzione">Introduzione</a> 
+            <a href="catalogo.html" class="active" title="Vai al Catalogo">Catalogo</a>
+            <div class="filters">
+                <a href="timeline.html" class="active" title="Vai alla Linea del Tempo">Linea del Tempo</a>
+                <a href="#" class="active" title="Vai all'indice delle persone">Persone</a>
+                <a href="#" class="active" title="Vai all'indice dei temi">Soggetti</a>
+            </div> 
+            <div class="search-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Cerca" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </topnav>
+
+    <button0 onclick="topFunction()" id="myBtn" title="Go to top">Top</button0>
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } 
+        else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    <section class="catalogo">
+    <h2 style="color:white"><em>Il Catalogo</em></h2>
+    <p style="color:white">Sfoglia il catalogo:</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Lista completa</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Fonti romane</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Fonti medievali</button>
+            <button class="tablinks" onclick="openCity(event, 'Chicago')">Fonti moderne</button>
+        </div>
+
+        <div id="London" class="tabcontent">
+        <h3>Lista completa</h3>
+        <p>Tutte le fonti in ordine alfabetico, filtrabili in base alla tipologia di fonte.</p>
+            <!-- Control buttons -->
+            <div id="myBtnContainer">
+                <button class="btn" onclick="filterSelection('tutti')">Tutti</button>
+                <button class="btn" onclick="filterSelection('bolla')">Bolla pontificia</button>
+                <button class="btn" onclick="filterSelection('epigrafe')">Epigrafe</button>                    
+                <button class="btn" onclick="filterSelection('epistola')">Epistola</button>
+                <button class="btn" onclick="filterSelection('op-letteraria')">Opera letteraria</button>
+            </div>
+            <div class="container">
+                <div class="card-1 filterDiv op-letteraria">
+                <img src="img/no-image.png" alt="Avatar" style="width:100%">
+                    <div class="container-1">
+                    <h4><b><em>Adversus Marcionem</em></b></h4>
+                        <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Quinto Settimio Florente Tertulliano</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>III secolo d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Trattato</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-2 filterDiv op-letteraria">
+                <img src="img/de-legibus.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-2">
+                    <p>Immagine: Frontespizio dell'opera nell'edizione di Georgius Henricus Moser e Fridericus Creuzer (1824)</p>
+                    <h4><b><em>De legibus</em> III,28</b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Marco Tullio Cicerone</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>52 a.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Trattato</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>    
+                <div class="card-3 filterDiv op-letteraria">
+                <img src="img/pisonem.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-3">
+                    <h4><b><em>In Pisonem</em> VIII</b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Marco Tullio Cicerone</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>55 a.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Orazione</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-4 filterDiv epigrafe">
+                <img src="img/tavole.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-4">
+                    <p>Immagine: Dettaglio dell'incisione <em>Loix des Douze Tables</em> (1799), disegno di Silvestre David Mirys e incisione di Claude-Nicolas Malapeau</p>
+                    <h4><b><em>Leggi delle XII Tavole</em> VI,4</b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Decemviri legibus scribundis</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>450-449 a.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Epigrafe</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>  
+                </div>
+                <div class="card-5 filterDiv epistola"> 
+                <img src="img/no-image.png" alt="Avatar" style="width:100%">
+                    <div class="container-5">
+                    <h4><b><em>Lettera di papa Gelasio I all'imperatore Anastasio I</em></b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Gelasio I</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>494 d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Epistola</td>
+                        </tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-6 filterDiv op-letteraria">
+                <img src="img/copertina.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-6">
+                    <p>Immagine: Frontespizio dell'opera</p>
+                    <h4><b><a href="item.html" class="active" title="Apri"><em>Leviathan, sive, De materia, forma, & potestate civitatis ecclesiasticae et civilis</em> XXVI</b></a></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Thomas Hobbes</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>1668 d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Trattato</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-7 filterDiv epigrafe">
+                <img src="img/res-gestae.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-7">
+                    <p>Immagine: Frammento del <em>Monumentum Ancyranum</em> (Ankara)</p>
+                    <h4><b><em>Res Gestae Divi Augusti</em> XXXIV,3</b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Caio Giulio Cesare Ottaviano Augusto</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>14 d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Epigrafe</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino, greco antico</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-8 filterDiv op-letteraria">
+                <img src="img/cassio-dione.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-8">
+                    <p>Immagine: Copertina dell'opera nell'edizione della Biblioteca Universale Rizzoli del 1997</p>
+                    <h4><b><em>Storia romana</em> LV,4</b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Dione Cassio Cocceiano</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>Prima metà del III secolo d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Trattato</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Greco antico</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-9 filterDiv bolla">
+                <img src="img/bolla-bonifacio.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-9">
+                    <p>Immagine: Esempio di una bolla di Bonifacio VIII (<em>Antiquorum habet</em>, 1300 d.C.)</p>
+                    <h4><b><em>Unam Sanctam Ecclesiam</em></b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Bonifacio VIII</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>18 novembre 1302 d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Bolla pontificia</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="card-10 filterDiv bolla">
+                <img src="img/bolla-clemente.jpg" alt="Avatar" style="width:100%">
+                    <div class="container-10">
+                    <p>Immagine: Esempio di una bolla di Clemente V (<em>Licet Dudum</em>, 1313 d.C.)</p>
+                    <h4><b><em>Vox in Excelso</em></b></h4>
+                    <table>
+                        <tr>
+                            <th><strong>Autore</strong></th>
+                            <td>Clemente V</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Datazione</strong></th>
+                            <td>3 aprile 1312 d.C.</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Tipologia</strong></th>
+                            <td>Bolla pontificia</td>
+                        </tr>
+                        <tr>
+                            <th><strong>Lingua originale</strong></th>
+                            <td>Latino</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        filterSelection("tutti")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "tutti") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show-zero");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-zero");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName(" active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        </script>
+
+        <div id="Paris" class="tabcontent">
+        <h3>Fonti di epoca romana</h3>
+            <div class="column-one">
+            <h4>Filtra per:</h4>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Persona</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Caio Giulio Cesare Augusto</a>
+                            <a href="#">Decemviri legibus scribundis</a>
+                            <a href="#">Dione Cassio</a>
+                            <a href="#">Marco Tullio Cicerone</a>
+                            <a href="#">Tertulliano</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches(".dropbtn")) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains("show")) {
+                                openDropdown.classList.remove("show");
+                            }
+                        }
+                    }
+                }
+                </script>  
+
+                <div class="dropdown-2">
+                    <button onclick="yourFunction()" class="dropbtn-2">Datazione</button>
+                        <div id="myDropdown-2" class="dropdown-content2">
+                            <a href="#">550-549 a.C.</a>
+                            <a href="#">55 a.C.</a>
+                            <a href="#">52 a.C.</a>
+                            <a href="#">14 d.C.</a>
+                            <a href="#">Primo decennio del III secolo d.C.</a>
+                            <a href="#">Prima metà del III secolo d.C.</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function yourFunction() {
+                    document.getElementById("myDropdown-2").classList.toggle("show2");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches(".dropbtn-2")) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content2");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains("show2")) {
+                                openDropdown.classList.remove("show2");
+                            }
+                        }
+                    }
+                }
+                </script> 
+
+                <div class="dropdown-3">
+                    <button onclick="itsFunction()" class="dropbtn-3">Tipologia</button>
+                    <div id="myDropdown-3" class="dropdown-content3" id="myBtnContainer">
+                        <a class="btn-special" onclick="filterSelection('tutti')">Tutti</a>
+                        <a class="btn-special" onclick="filterSelection('epigrafe')">Epigrafe</a>                    
+                        <a class="btn-special" onclick="filterSelection('op-letteraria')">Opera letteraria</a>
+                    </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function itsFunction() {
+                    document.getElementById("myDropdown-3").classList.toggle("show3");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn-3')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content3");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show3')) {
+                                openDropdown.classList.remove('show3');
+                            }
+                        }
+                    }
+                }
+                </script> 
+            </div>                 
+
+            <div class="column-two"> 
+                <div class="container">
+                    <div class="card-1 filterDiv op-letteraria">
+                    <img src="img/no-image.png" alt="Avatar" style="width:100%">
+                        <div class="container-1">
+                        <h4><b><em>Adversus Marcionem</em></b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Quinto Settimio Florente Tertulliano</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>III secolo d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Trattato</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-2 filterDiv op-letteraria">
+                    <img src="img/de-legibus.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-2">
+                        <p>Immagine: Frontespizio dell'opera nell'edizione di Georgius Henricus Moser e Fridericus Creuzer (1824)</p>
+                        <h4><b><em>De legibus</em> III,28</b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Marco Tullio Cicerone</td>
+                            </tr>
+                            <tr>   
+                                <th><strong>Datazione</strong></th>
+                                <td>52 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Trattato</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-3 filterDiv op-letteraria">
+                    <img src="img/pisonem.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-3">
+                        <h4><b><em>In Pisonem</em> VIII</b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Marco Tullio Cicerone</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>55 a.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Orazione</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-6 filterDiv epigrafe">
+                    <img src="img/tavole.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-6">
+                        <p>Immagine: Dettaglio dell'incisione <em>Loix des Douze Tables</em> (1799), disegno di Silvestre David Mirys e incisione di Claude-Nicolas Malapeau</p>
+                        <h4><b><em>Leggi delle XII Tavole</em> VI,4</b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Decemviri legibus scribundis</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>450-449 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Epigrafe</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-9 filterDiv epigrafe">
+                    <img src="img/res-gestae.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-9">
+                        <p>Immagine: Frammento del <em>Monumentum Ancyranum</em></p>
+                        <h4><b><em>Res Gestae Divi Augusti</em> XXXIV,3</b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Caio Giulio Cesare Ottaviano Augusto</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>14 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Epigrafe</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino, greco antico</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-8 filterDiv op-letteraria">
+                    <img src="img/cassio-dione.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-8">
+                        <p>Immagine: Copertina dell'opera nell'edizione della Biblioteca Universale Rizzoli del 1997</p>
+                        <h4><b><em>Storia Romana</em> LV,4</b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Dione Cassio Cocceiano</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>Prima metà del III secolo d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Trattato</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Greco antico</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+            filterSelection("tutti")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "tutti") c = "";
+                // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show-zero");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-zero");
+                    }
+                }
+
+            // Show filtered elements
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+            // Hide elements that are not selected
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current control button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName(" active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+                });
+            }
+            </script>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+        <h3>Fonti di epoca medievale</h3>
+            <div class="column-one1">
+            <h4>Filtra per:</h4>
+                <div class="dropdown-one">
+                    <button onclick="oneFunction()" class="dropbtn-one">Persona</button>
+                        <div id="myDropdown-one" class="dropdown-content-one">
+                            <a href="#">Bonifacio VIII</a>
+                            <a href="#">Clemente V</a>
+                            <a href="#">Gelasio I</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function oneFunction() {
+                    document.getElementById("myDropdown-one").classList.toggle("show-one");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn-one')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content-one");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show-one')) {
+                                openDropdown.classList.remove('show-one');
+                            }
+                        }
+                    }
+                }
+                </script>  
+
+                <div class="dropdown-two">
+                    <button onclick="twoFunction()" class="dropbtn-two">Datazione</button>
+                        <div id="myDropdown-two" class="dropdown-content-two">
+                            <a href="#">1302</a>
+                            <a href="#">1312</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function twoFunction() {
+                    document.getElementById("myDropdown-two").classList.toggle("show-two");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn-two')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content-two");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show-two')) {
+                                openDropdown.classList.remove('show-two');
+                            }
+                        }
+                    }
+                }
+                </script> 
+
+                <div class="dropdown-three">
+                    <button onclick="threeFunction()" class="dropbtn-three" id="yourBtnContainer">Tipologia</button>
+                        <div id="myDropdown-three" class="dropdown-content-three">
+                            <a href="#">Tutti</a>
+                            <a href="#">Bolla pontificia</a>
+                            <a href="#">Epistola</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function threeFunction() {
+                    document.getElementById("myDropdown-three").classList.toggle("show-three");
+                }
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn-three')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content-three");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show-three')) {
+                                openDropdown.classList.remove('show-three');
+                            }
+                        }
+                    }
+                }
+                </script> 
+            </div>             
+                
+            <div class="column-two2">
+                <div class="container">
+                    <div class="card-5 filterDiv epistola"> 
+                    <img src="img/no-image.png" alt="Avatar" style="width:100%">
+                        <div class="container-5">
+                        <h4><b><em>Lettera di papa Gelasio I all'imperatore Anastasio I</em></b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Gelasio I</td>
+                            </tr>
+                                <tr>
+                                    <th><strong>Datazione</strong></th>
+                                    <td>494 d.C.</td>
+                                </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Epistola</td>
+                            </tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-9 filterDiv bolla">
+                    <img src="img/bolla-bonifacio.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-9">
+                        <p>Immagine: Esempio di una bolla di Bonifacio VIII (<em>Antiquorum habet</em>, 1300 d.C.)</p>
+                        <h4><b><em>Unam Sanctam Ecclesiam</em></b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Bonifacio VIII</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>18 novembre 1302 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Bolla pontificia</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="card-10 filterDiv bolla">
+                    <img src="img/bolla-clemente.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-10">
+                        <p>Immagine: Esempio di una bolla di Clemente V (<em>Licet Dudum</em>, 1313 d.C.)</p>
+                        <h4><b><em>Vox in Excelso</em></b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Clemente V</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>3 aprile 1312 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Bolla pontificia</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        filterSelection("tutti")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "tutti") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show-zero");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-zero");
+                }
+            }
+            // Show filtered elements
+            function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("yourBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName(" active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        </script>
+        
+        <div id="Chicago" class="tabcontent">
+        <h3>Fonti di epoca moderna</h3>
+            <div class="column-first">
+            <h4>Filtra per:</h4>
+                <div class="dropdown-first">
+                    <button onclick="theirsFunction()" class="dropbtn-first">Persona</button>
+                        <div id="myDropdown-first" class="dropdown-content-first">
+                            <a href="#">Thomas Hobbes</a><br>
+                            <a href="#">...</a><br>
+                            <a href="#">...</a><br>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function theirsFunction() {
+                    document.getElementById("myDropdown-first").classList.toggle("show-first");
+                }
+                </script>  
+
+                <div class="dropdown-second">
+                    <button onclick="yoursFunction()" class="dropbtn-second">Datazione</button>
+                        <div id="myDropdown-second" class="dropdown-content-second" id="itsBtnContainer">
+                            <a href="#">1668</a>
+                            <a href="#">...</a>
+                            <a href="#">...</a>
+                        </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function yoursFunction() {
+                    document.getElementById("myDropdown-second").classList.toggle("show-second");
+                }
+                </script> 
+
+                <div>
+                <button onclick="mineFunction()" class="dropbtn-third">Tipologia</button>
+                    <div id="myDropdown-third" class="dropdown-content-third" id="hisBtnContainer">
+                        <a class="btn-special" onclick="filterSelection('tutti')">Tutti</a>                   
+                        <a class="btn-special" onclick="filterSelection('epistola')">...</a>
+                        <a class="btn-special" onclick="filterSelection('op-letteraria')">Opera letteraria</a>
+                    </div>
+                </div>
+                <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                function mineFunction() {
+                    document.getElementById("myDropdown-third").classList.toggle("show-third");
+                }
+                </script> 
+            </div> 
+
+            <div class="column-second">
+                <div class="container">
+                    <div class="card-6 filterDiv op-letteraria">
+                    <img src="img/copertina.jpg" alt="Avatar" style="width:100%">
+                        <div class="container-6">
+                        <p>Immagine: Frontespizio dell'opera</p>
+                        <h4><b><a href="item.html" class="active" title="Apri"><em>Leviathan, sive, De materia, forma, & potestate civitatis ecclesiasticae et civilis</em> XXVI</a></b></h4>
+                        <table>
+                            <tr>
+                                <th><strong>Autore</strong></th>
+                                <td>Thomas Hobbes</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Datazione</strong></th>
+                                <td>1668 d.C.</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Tipologia</strong></th>
+                                <td>Trattato</td>
+                            </tr>
+                            <tr>
+                                <th><strong>Lingua originale</strong></th>
+                                <td>Latino</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        filterSelection("tutti")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "tutti") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show-zero");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show-zero");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current control button (highlight it)
+        var btnContainer = document.getElementById("hisBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName(" active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+        </script>
+
+        <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("active");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p><a class="active" title="Credits" href="#">Credits</a> | <a href="#" class="active" title="Licenze">Licenze</a></p>
+        </div>
+        <div class="copyrights">
+            <p>&#169; Copyright (c) 2025</p>
+        </div>
+    </footer>
+</body>

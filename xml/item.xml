@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mp="http://esempio.org/ProgettoPersonale/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xsi:schemaLocation="http://esempio.org/ProgettoPersonale/schema.xsd">
+	<dc:title xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/180243883">Leviathan, sive, De materia, forma, et potestate civitatis ecclesiasticae et civilis</dc:title>
+	<mp:chapter>Caput XXVI. De Legibus Civilibus</mp:chapter>
+	<dcterms:IsPartOf>Thomae Hobbes Malmesburiensis Opera philosophica, quae Latinè scripsit, omnia. Antè quidem per partes, nunc autem, post cognitas omnium objectiones, conjunctim et accuratiùs edita</dcterms:IsPartOf>
+	<dc:creator xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/59083895">Hobbes, Thomas</dc:creator>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/names/n79059190">Political science</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/subjects/sh99005065">Philosophy</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/subjects/sh85127474">State, The</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/subjects/sh85025534">Church and State</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/subjects/sh85120427">Seventeenth century</dc:subject>
+	<dc:subject xsi:type="dcterms:LCSH" xml:id="http://id.loc.gov/authorities/subjects/sh85026469">Civilization, Modern</dc:subject>
+	<dc:subject xsi:type="mp:AAT" mp:ref="http://vocab.getty.edu/page/aat/300417585">Literature</dc:subject>
+	<dc:subject xsi:type="mp:AAT" mp:ref="http://vocab.getty.edu/page/aat/300026681">Treatise</dc:subject>
+	<dc:language xsi:type="dcterms:ISO639-3" xml:id="lat">Latin</dc:language>
+	<dc:contributor xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/284244">Faithorne, William</dc:contributor>
+	<dc:publisher xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/41887929">Blaeu, Joan</dc:publisher>
+	<dc:description>L'opera "Leviathan, sive, De materia, forma, et potestate civitatis ecclesiasticae et civilis" di Thomas Hobbes contenuta nell'Opera Omnia delle opere in latino di Hobbes pubblicata da Joan Blaeu ad Amsterdam nel 1668.</dc:description>
+	<dc:type>Text</dc:type>
+	<dc:coverage xsi:type="dcterms:TGN" xml:id="http://vocab.getty.edu/page/tgn/7006952">Amsterdam</dc:coverage> 
+	<dc:date>1668</dc:date>
+	<dc:source>Thomae Hobbes Malmesburiensis Opera philosophica, quae Latinè scripsit, omnia. Antè quidem per partes, nunc autem, post cognitas omnium objectiones, conjunctim et accuratiùs edita. - Amstelodami : apud Ioannem Blaeu, 1668. - [4], 40, 40b-40m, 41-44, 28, 146, [10], 261, [3], 86, [18], 174, [2], 42, [2], 64, [4], 365, [15] p., 32 c. di tav. : ill. calcogr., 1 ritr. ; 4º. - Raccolta di otto trattati, ognuno con proprio occhietto, paginazione e segnatura autonome. L’ordine originario è quello che figura nell’elenco a c. *2r, ma nell’Admonitiuncula ad lectorem a c. *2v l’editore ne suggerisce uno diverso in tre tomi. La Quadratura circuli (c. G1r), con data 1669 nel titolo, è probabilmente un’aggiunta successiva. Cfr. http://solo.bodleian.ox.ac.uk, n. 013483650. - Ritr. dell’A. inciso da William Faithorne. - Marca (Sfera armillare con ai lati il Tempo ed Ercole: Indefessus agendo) sul front. - Corsivo, greco, romano. - Segn.: *2 A-E⁴ χE⁴ 2χE² F² G-I⁴ K² 2A-2S 2T² 3A-4L⁴, ²2A-2L⁴ 3A-4A⁴ a-e⁴f² a-2h⁴ 3a² 3b-5b⁴ 5c². - Bianche le c. 2T2, 4L4, ²2L4, ²4A4, f2. - I fasc. χE⁴ 2χE² sono segnati E5-10..</dc:source>
+	<dc:source>OCLC:1403631717; SBN:IT\ICCU\BVEE\023255</dc:source>
+	<dc:provenance>Biblioteca Storica di Ateneo "Arturo Graf", Biblioteche Umanistiche dell'Università degli Studi di Torino</dc:provenance>	
+	<dc:rights xsi:type="dcterms:URI">https://creativecommons.org/publicdomain/mark/1.0/</dc:rights>
+	<dc:identifier>SBN:IT\ICCU\BVEE\023255</dc:identifier>
+	<dc:format xsi:type="dcterms:MIME">Text/html</dc:format>
+</mp:metadata>

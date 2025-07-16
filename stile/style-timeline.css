@@ -1,0 +1,283 @@
+html {
+	height: 250%;
+	max-width:100%;
+}
+
+body {
+	font-family: Arial;
+	font-size:18px;
+	height:100%;
+	max-width:auto;
+	margin:0;
+}
+
+/* header */
+header {
+	background-color: rgba(255,255,255, 0.8);
+	margin:0;
+	padding:0.2%;
+	text-align:center;
+	color: black;
+	text-decoration:none;
+	font-size:30px;
+	text-shadow: 2px 2px #a64dff;
+} 
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: #26004d;
+  margin-bottom:0;
+}
+
+.breadcrumb {
+	width:auto;
+	margin:none;
+	margin-top:0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 3px;
+  color: white;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color:white;
+  text-decoration:none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.li a:active {
+	color:white;
+	text-decoration:underline;
+	padding-color:#26004d;
+	border:0px;
+	border-color:none;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color:black;
+	overflow: hidden;
+	padding:10px;
+	margin-top:0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	color: white;
+	float: left;
+	text-align: center;
+	position: center;
+	vertical-align:center;
+	padding: 10px 10px;
+	padding-color: black;
+	text-decoration: none;
+	font-size: 16px;
+	margin-right:1%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+  padding-color: #26004d;
+  color: white;
+  text-align: center;
+  vertical-align:center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 10px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size:16px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.filters a {
+	color:#a64dff;
+}
+
+.filters a:hover {
+	background-color:#a64dff;
+	color:white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav input[type=text] {
+    float: right;
+    padding: 15px;
+    border: 4px solid #a64dff;
+    font-size: 14px;
+    position:center;
+  }
+}
+
+body {
+	font-family: Arial;
+	width:auto;
+	font-size: 18px;
+	background-image: url(../img/original.png);
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.2);
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-attachment: fixed;
+	background-position: center;
+	margin:0;
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  background-color:black;
+  padding: 10px 10px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  margin-top: 20px;
+}
+
+.btn:hover {
+	background-color:#26004d;
+}
+
+.btn a {
+	color:white;
+	text-decoration:none;
+	font-size:16px;
+}
+.sec-one {
+	height:15%;
+	width:100%;
+	margin-top:8%;
+	margin-bottom:4%;
+}
+
+.row-one {
+	padding:10px;
+	width: 80%;
+	height:100%;
+	float:center;
+	margin-left: 10%;
+	background-color: rgba(255,255,255,0.8);
+	text-align:center;
+	font-size: 16px;
+	font-color: black;
+	position:center;
+	border: 10px groove #26004d;
+}
+
+.row-one h3 {
+	color:black;
+}
+
+.sec-two {
+	margin-top:10%;
+	width:100%;
+	text-align:center;
+	margin-bottom:4%;
+	background-color: rgba(0,0,0,0.8);
+	height:45%;
+	color:white;
+	padding-top:10px;
+}
+
+
+.timeline iframe {
+	width:100%;
+}
+
+
+footer {
+	margin:0;
+	margin-bottom:0;
+}
+
+.footer {
+	font-size:14px;
+	color: white;
+	background-color:#26004d;
+	padding:20px;
+	text-align:center;
+	height:5%;
+	margin-bottom:0;
+}
+
+.footer a {
+	color:white;
+}
+
+.copyrights {
+	font-size: 14px;
+	background-color:black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin-bottom:0;
+}
+
+.copyrights a {
+	color:white;
+}
+
+
+/* Bottom to Top button */
+button0 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 14px;
+  border: 1px solid white;
+  outline: none;
+  background-color: #26004d;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+button0:hover {
+  background-color: #a64dff;
+}
