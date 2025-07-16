@@ -1,0 +1,608 @@
+html {
+	height: 250%;
+	max-width:auto;
+}
+
+body {
+	font-family: Arial;
+	font-size:18px;
+	height:100%;
+	max-width:auto;
+	margin:0;
+}
+
+/* header */
+header {
+	background-color: rgba(255,255,255, 0.8);
+	margin:0;
+	padding:0.2%;
+	text-align:center;
+	color: black;
+	text-decoration:none;
+	font-size:30px;
+	text-shadow: 2px 2px #a64dff;
+} 
+
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 10px;
+  list-style: none;
+  background-color: #26004d;
+  margin-bottom:0;
+}
+
+.breadcrumb {
+	width:100%;
+	margin:none;
+	margin-top:0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 3px;
+  color: white;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color:white;
+  text-decoration:none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color:black;
+	overflow: hidden;
+	padding:10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	color: white;
+	float: left;
+	text-align: center;
+	position: center;
+	padding: 10px 10px;
+	padding-color: black;
+	text-decoration: none;
+	font-size: 16px;
+	margin-right:1%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a:active {
+  background-color: #26004d;
+  color:white;
+}
+
+.filters a {
+	color:#a64dff;
+}
+
+.filters a:hover {
+	background-color:#a64dff;
+	color:white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.topnav .search-container btn {
+  float: right;
+  padding: 10px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container btn:hover {
+  background: #ccc;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav input[type=text] {
+  	float: right;
+  	padding: 15px;
+  	border: 4px solid #a64dff;
+  	font-size: 14px;
+  	position:center;
+  }
+}
+
+body {
+	font-family: Arial;
+	width:auto;
+	font-size: 18px;
+	background-image: url(../img/original.png);
+	background-repeat: no-repeat;
+	background-color: rgba(255,255,255,0.2);
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-attachment: fixed;
+	background-position: center;
+	margin:0;
+}
+
+/* Bottom to Top button */
+button {
+ 	display: none;
+ 	position: fixed;
+ 	bottom: 20px;
+ 	right: 20px;
+ 	z-index: 99;
+ 	font-size: 14px;
+ 	border: 1px solid white;
+ 	outline: none;
+ 	background-color: #26004d;
+ 	color: white;
+ 	cursor: pointer;
+ 	padding: 10px;
+ 	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #a64dff;
+}
+
+
+/* sezioni */
+.sec-one {
+	height:24%;
+	margin-bottom:4%;
+}
+
+.rowone {
+	width: 80%;
+	float:center;
+	margin-left: 10%;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.8);
+	border: 10px;
+	border-color:#26004d;
+	border-style: groove;
+	text-align:center;
+	font-size: 16px;
+	font-color: black;
+	position:center;
+	margin-top:5%;
+}
+
+/* Style the links inside the navigation bar */
+.rowone a {
+	color: #26004d;
+	float: center;
+	text-align: center;
+	position: center;
+	padding: 10px 10px;
+	padding-color: black;
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.rowone a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.rowone a:active {
+  background-color: #26004d;
+  color: white;
+}
+
+
+.sec-three {
+	height:25%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.sec-four {
+	height:15%;
+	margin-top:5%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+
+.columnone-two {
+	width: 60%;
+	float: left;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.8);
+	border: 10px;
+	border-style: groove;
+	border-color: #26004d;
+	text-align:center;
+	font-size: 16px;
+	font-color: black;
+	margin-top:50px;
+
+}
+
+.columntwo-two {
+	float: right;
+	position:center;
+	background-color: rgba(255,255,255,0.8);
+	vertical-align:center;
+	margin-right: 15%;
+	margin-top: 110px;
+	border-style: solid;
+	border-color: black;
+}
+
+.columntwo-two a {
+	color: #26004d;
+	padding: 20px 15px;
+	font-size: 16px;
+	text-decoration: none;
+	position:center;
+}
+
+.columntwo-two a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+.columntwo-two a:active {
+  background-color: #26004d;
+  color: white;
+}
+
+
+.columnone-three {
+	width: 40%;
+	float: left;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.8);
+	border: 10px;
+	border-style: groove;
+	border-color: #26004d;
+	text-align: center;
+	font-size: 16px;
+	font-color: black;
+	margin-left: 10%;
+}
+
+.columntwo-three {
+	float: right;
+	vertical-align: center; 
+	background-color: rgba(255,255,255,0.8);
+	margin-right: 15%;
+	margin-top: 50px;
+	border-style: solid;
+	border-color: black;
+}
+
+.columntwo-three a {
+	color: #26004d;
+	padding: 20px 15px;
+	font-size: 16px;
+	text-decoration:none;
+	position:center;
+}
+
+.columntwo-three a:hover {
+  background-color: #26004d;
+  color: white;
+}
+
+.columntwo-three a:active {
+  background-color: #26004d;
+  color: white;
+}
+
+
+
+
+.footer {
+	font-size:14px;
+	color: white;
+	background-color:#26004d;
+	padding:20px;
+	text-align:center;
+}
+
+.footer a {
+	color:white;
+}
+
+.copyrights {
+	font-size: 14px;
+	background-color:black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.copyrights a {
+	color:white;
+}
+
+
+
+.sec-two {
+	margin:0;
+	height:32.2%;
+	margin-bottom:2%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+
+/* slideshow */
+* {box-sizing: border-box}
+body {
+	font-family: Verdana, sans-serif; 
+	margin:0;
+}
+
+.mySlides {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
+	position: center;
+}
+
+.slideshow-row {
+	width:100%;
+  	background-color: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:600px;
+  height:400px;
+  position:relative;
+  margin-bottom:auto;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+  border:4px solid black;
+}
+ 
+  
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  color:white;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  position: center;
+}
+
+/* Position the "previous button" */
+.prev {
+	position:center;
+	left:0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #a64dff;
+}
+
+/* Caption text */
+.text {
+  color: #a64dff;
+  font-size: 18px;
+  padding: 8px 8px;
+  position: absolute;
+  vertical-align:center;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-top:40px;
+}
+
+
+/* Transparent Image Text */
+.slideshow-container .text {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+
+.text a {
+	color: white;
+	float:center;
+	text-align:center;
+	position:center;
+	padding: 15px 15px;
+	text-decoration: underline;
+	font-size: 14px;
+	vertical-align: center;
+}
+
+.text a:hover {
+  background-color: #a64dff;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.text a:active {
+  background-color:black;
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  position:relative;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:background-color 0.6s ease;
+  margin-bottom:10px;
+}
+
+.dot:active, .dot:hover {
+  background-color: #a64dff;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+article {
+	background-color:rgba(0,0,0,0.8);
+	width:100%;
+	margin-top:4%;
+	margin-bottom:4%;
+	height:55%;
+	padding:1%;
+	font-color:white;
+	text-align:center;
+}
+
+
+/* cards in article */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 20px;
+  margin-right:2%;
+  margin-left:2%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card-1, .card-2, .card-3, .card-4 {
+  	padding: 10px;
+  	text-align: left;
+  	float:center;
+	height:700px;
+	width:230px;
+	margin:1.7%;
+	font-size:14px;
+  	background-color: white;
+  	/* Add shadows to create the "card" effect */
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  	transition: 0.3s;
+}
+
+.card-1 h4, .card-2 h4, .card-3 h4, .card-4 h4 {
+	color:#a64dff;
+	text-align:center;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p {
+	text-align:center;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img {
+  border-radius: 5px 5px 0 0;
+  height:50%;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+/* On mouse-over, add a deeper shadow */
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
+  box-shadow: 0 8px 16px 0 rgba(255,255,255,0.9);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px 10px;}

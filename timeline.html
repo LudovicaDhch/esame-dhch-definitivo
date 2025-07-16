@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ita">
+<!-- file html diviso in head e body -->
+<head>
+    <title>Linea del tempo - Sulle tracce dell'auctoritas</title>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="keywords" content="Auctoritas, impero romano">
+    <META NAME="DC.Title" CONTENT="Sulle tracce dell'auctoritas">
+    <META NAME="DC.Creator" CONTENT="Ludovica Mei">
+    <META NAME="DC.Subject" CONTENT="Auctoritas, storia">
+    <META NAME="DC.Description" CONTENT="Analisi delle fonti di epoca romana repubblicana, medievale e moderna relative al concetto politico di auctoritas">
+    <META NAME="DC.Publisher" CONTENT="Ludovica Mei">
+    <META NAME="DC.Date" CONTENT="2025-07-15">
+    <META NAME="DC.Type" CONTENT="Document">
+    <META NAME="DC.Format" CONTENT="Text/html">
+    <META NAME="DC.Identifier" CONTENT="...">
+    <META NAME="DC.Language" CONTENT="Italiano">
+    <META NAME="DC.Rights" CONTENT="Copyright (c) 2025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile/style-timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <blockquote><em><strong>Sulle tracce dell'auctoritas</strong></em></blockquote>
+    </header>
+    <!-- Breadcrumbs -->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Linea del tempo</a></li>
+    </ul>
+    <!-- Top nav -->
+    <topnav>
+        <div class="topnav">
+            <a href="index.html" class="active" title="Vai alla Home">Home</a> 
+            <a href="#" class="active" title="Vai all'Introduzione">Introduzione</a> 
+            <a href="catalogo.html" class="active" title="Vai al Catalogo">Catalogo</a> 
+            <div class="filters">
+                <a href="timeline.html" class="active" title="Vai alla Linea del Tempo">Linea del Tempo</a>
+                <a href="#" class="active" title="Vai all'indice delle persone">Persone</a>
+                <a href="#" class="active" title="Vai all'indice dei temi">Soggetti</a>
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Cerca" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </topnav>
+
+    <button0 onclick="topFunction()" id="myBtn" title="Go to top">Top</button0>
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } 
+        else {
+            mybutton.style.display = "none";
+        }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+    <section class="sec-one">
+        <div class="row-one">
+            <h2>La linea del tempo</h2>
+            <p>Viene messa a disposizione una linea del tempo su cui sono collocate le fonti contenute nel catalogo. Attraverso di essa è possibile sfogliare il catalogo e filtrare gli item in ordine cronologico.</p>
+            <button class="btn"><a href="#arrivo-1">Timeline - Fonti</a></button>
+        </div>
+    </section>
+
+    <section class="sec-two" id="arrivo-1">
+    <h3>Le fonti</h3>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2%3A2PACX-1vTzAW6cRa3dvOy7lRq0cv_0hF_9Lhn1l17ipu54mZ6OvTtvsFAePB5nc9yLhTSCzNYVwlDC4aDyKU-w&font=Lustria-Lato&lang=it&initial_zoom=2&width=100%25&height=610' width='98%' height='610' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p><a href="#" title="Credits">Credits</a> | <a href="#" title="Licenze">Licenze</a></p>
+        </div>
+        <div class="copyrights">
+            <p>&#169; Copyright (c) 2025</p>
+        </div>
+    </footer>
+</body>
